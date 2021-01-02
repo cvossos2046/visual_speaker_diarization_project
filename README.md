@@ -9,7 +9,7 @@ using lip motion features and Support Vector Machines.
 You need python 3.6.9 version and conda 4.6.11 environment.
 
 ## Dataset and ground truth
-The gridnews directory contains the videos that was used for training and testing as well the corresponding transcriptions files.
+The gridnews directory contains the videos that were used for training and testing as well the corresponding transcriptions files.
 [dataset](https://drive.google.com/drive/u/0/folders/1TO72-uN6_vexSOJdIr3HG-Hws4gyPCwT)
 
 ## Step for running the project
@@ -18,15 +18,15 @@ In visual_diarization_svm directory run the following scripts:
 
 1. dlib_face_detection_svm_train.py (creates the optical flow features)
 2. clear_opt_flow_features_train.py (ignores the incidental speakers)
-	* Change manually the ids of each main speaker to a unique id at optical_flow_features_train.txt
-3. svm_train.py (training an svm classifier)
+	* Should change manually the ids of each main speaker to a unique id at optical_flow_features_train.txt
+3. svm_train.py (trains an svm classifier)
 
 ### Testing
 In visual_diarization_svm directory run the following scripts:
 1. dlib_face_detection_svm_test.py (creates the optical flow features)
 2. svm_test.py (predicts speech or not speech for each speaker in a frame)
-	* Change manually the ids of each main speaker to a unique id at predictions_file.txt
-3. svm_test_winow_N (predicts speech or not speech for each speaker in a window of N frames)
+	* Should change manually the ids of each main speaker to a unique id at predictions_file.txt
+3. svm_test_window_N (predicts speech or not speech for each speaker in a window of N frames)
 
 ### Evaluation
 In pyannote-parser-develop/tests directory
@@ -45,7 +45,7 @@ Alongside, in trs.py initialize the video variable with the video name and set t
 	video = 'NET20070331_thlep_1_2'
 
 	start = 1505.931
-    end = 1952.862
+    	end = 1952.862
 
 
 Time limits for the 4 testing videos:
