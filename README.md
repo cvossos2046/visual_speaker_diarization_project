@@ -18,13 +18,14 @@ In visual_diarization_svm directory run the following scripts:
 
 1. dlib_face_detection_svm_train.py (creates the optical flow features)
 2. clear_opt_flow_features_train.py (ignores the incidental speakers)
-	* Change manually the ids of each main speaker to a unique id
+	* Change manually the ids of each main speaker to a unique id at optical_flow_features_train.txt
 3. svm_train.py (training an svm classifier)
 
 ### Testing
 In visual_diarization_svm directory run the following scripts:
 1. dlib_face_detection_svm_test.py (creates the optical flow features)
 2. svm_test.py (predicts speech or not speech for each speaker in a frame)
+	* Change manually the ids of each main speaker to a unique id at predictions_file.txt
 3. svm_test_winow_N (predicts speech or not speech for each speaker in a window of N frames)
 
 ### Evaluation
