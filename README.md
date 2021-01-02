@@ -45,7 +45,7 @@ Alongside, in trs.py initialize the video variable with the video name and set t
 	video = 'NET20070331_thlep_1_2'
 
 	start = 1505.931
-    	end = 1952.862
+    end = 1952.862
 
 
 Time limits for the 4 testing videos:
