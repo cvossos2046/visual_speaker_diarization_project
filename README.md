@@ -12,7 +12,7 @@ You need python 3.6.9 version and conda 4.6.11 environment.
 The gridnews directory contains the videos that were used for training and testing as well the corresponding transcriptions files.
 [dataset](https://drive.google.com/drive/u/0/folders/1TO72-uN6_vexSOJdIr3HG-Hws4gyPCwT)
 
-## Step for running the project
+## Steps for running the project
 ### Training
 In visual_diarization_svm directory run the following scripts:
 
